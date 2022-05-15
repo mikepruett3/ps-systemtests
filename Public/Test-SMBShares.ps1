@@ -54,7 +54,7 @@ function Test-SMBShares {
                     $Shares = Get-CimInstance Win32_Share -CimSession $CIM
                 }
                 catch {
-                    Write-Error -Message "Unable to retieve a list of Shares from $Server!!!"
+                    Write-Error -Message "Unable to retrieve a list of Shares from $Server!!!"
                     $Shares = $False
                 }
                 if (!($Shares -eq $False)) {
